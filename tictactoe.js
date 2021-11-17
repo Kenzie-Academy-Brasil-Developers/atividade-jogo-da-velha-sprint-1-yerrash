@@ -13,3 +13,12 @@ const winningCombos = [
     [1,5,9],
     [3,5,7]
 ]
+
+const handleClick = function(event) {
+    const cell = event.target;
+    console.log(cell.id);
+}
+const cells = document.querySelectorAll('td');
+for (i=0; i<cells.length; i++) {
+    cells[i].addEventListener('click', handleClick);
+}
